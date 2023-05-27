@@ -1,0 +1,161 @@
+html {
+    background-color: #E5E5E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 5px 0;
+}
+
+.headerDiv {
+    display: flex;
+    margin: 0 1rem;
+}
+
+.headerDiv h1 img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5rem;
+}
+
+.headerDiv #headerTitle {
+    margin-top: 1.9rem;
+}
+
+#globalSection {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 1rem;
+}
+
+#globalSection #encryptorDiv {
+    width: 80%;
+}
+
+#globalSection #resultText {
+    width: 20%;
+}
+
+.verticalDivs {
+    display: flex;
+    flex-direction: column;
+}
+
+#encryptorDiv textarea {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    width: 65%;
+    margin: 3rem auto;
+    resize: none;
+}
+
+#encryptorDiv textarea:focus {
+    outline: none;
+}
+
+
+.bottomDiv {
+    justify-content: center;
+    margin: 0 auto 0 10rem;
+}
+
+.bottomDiv .alertDiv {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    font-family: inherit;
+    margin: 0.5rem auto 0;
+}
+
+.alertDiv img {
+    width: 15px;
+    height: 15px;
+    margin: 0.8rem 0.8rem 0 2.1rem;
+}
+
+
+#encryptorDiv .buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 6rem;
+}
+
+#encryptorDiv #encryptButton {
+    background-color: #0A3871;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    margin: auto 2rem;
+    width: 14rem;
+    height: 3rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    font-family: inherit;
+}
+
+#encryptorDiv #encryptButton:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #0c4285;
+}
+
+#encryptorDiv #decryptButton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 1rem;
+    border: 1px solid #0A3871;
+    margin: auto 2rem;
+    width: 14rem;
+    height: 3rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: inherit;
+}
+
+#encryptorDiv #decryptButton:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#resultText {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    justify-content: center;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 1000px;
+    top: 4rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#resultText #encryptedText {
+    position: absolute;
+    width: 336px;
+    height: 500px;
+    top: 72px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #495057;
+}
+
+#resultText #copyButton {
+    color: #0A3871;
+    border-radius: 1rem;
+    border: 1px solid #0A3871;
+    margin: auto auto 1rem;
+    width: 14rem;
+    height: 3rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: inherit;
+}
+
+#resultText #copyButton:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}

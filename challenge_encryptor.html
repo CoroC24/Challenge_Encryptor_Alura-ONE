@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+    <head>
+        <img src="" />
+        <title>ENCRIPTADOR DE TEXTO</title>
+    </head>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+
+    <body>
+        <header>
+            <div class="headerDiv">
+                <h1><img src="files/logo alura.png" /></h1>
+                <h1 id="headerTitle">ENCRIPTADOR DE TEXTO</h1>
+            </div>
+        </header>
+
+        <section id="globalSection">
+            <div class="verticalDivs" id="encryptorDiv">
+                <textarea
+                    id="inputText"
+                    name="inputText"
+                    placeholder="Ingrese el texto"
+                    rows="8"
+                    cols="50"
+                ></textarea>
+
+                <div class="bottomDiv">
+                    <div class="alertDiv" id="alertDiv">
+                        <img src="files/alerta_azul.png" />
+                        <p id="alertText">Solo letras minúsculas y sin acentos.</p>
+                    </div>
+
+                    <div class="buttonsDiv">
+                        <button id="encryptButton" name="encryptButton" onclick="encrypText()">
+                            ENCRIPTAR
+                        </button>
+                        <button id="decryptButton" name="decryptButton" onclick="decryptText()">
+                            DESENCRIPTAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verticalDivs" id="resultText">
+                <img id="imageNoMessage" src="files/image_no_message.png" alt="No Hay Mensaje" />
+                <p id="encryptedText"></p>
+                <button id="copyButton" onclick="copyTextEncrypted()">COPIAR</button>
+                <script>
+                    var button = document.getElementById("copyButton");
+                    button.style.display = 'none';
+                </script>
+            </div>
+        </section>
+    </body>
+</html>
