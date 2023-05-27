@@ -20,6 +20,8 @@ function copyTextEncrypted() {
     document.execCommand('copy');
 
     document.body.removeChild(tempInput);
+
+    showMessageCopyAlert();
 }
 
 
@@ -49,6 +51,7 @@ function replaceImageToText(text) {
     var image = document.getElementById('imageNoMessage');
     var getTextarea = document.getElementById('inputText');
     var textElement = document.getElementById('encryptedText');
+    var button = document.getElementById('copyButton');
 
     if (image != null) {
         image.style.display = 'none';
@@ -60,4 +63,19 @@ function replaceImageToText(text) {
     button.style.display = 'block';
 
     getTextarea.value = "";
+}
+
+function showMessageCopyAlert() {
+    var containerMessage = document.getElementById('copyMessageAlert');
+    var message = document.getElementById('messageTextAlert');
+
+    message.textContent = '¡TEXTO COPIADO!';
+
+    containerMessage.style.display = 'block';
+}
+
+function closeMeesageCopyAlert() {
+    var containerMessage = document.getElementById('copyMessageAlert');
+
+    containerMessage.style.display = 'none';
 }
