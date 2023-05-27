@@ -48,10 +48,13 @@
                 <img id="imageNoMessage" src="files/image_no_message.png" alt="No Hay Mensaje" />
                 <p id="encryptedText"></p>
                 <button id="copyButton" onclick="copyTextEncrypted()">COPIAR</button>
-                <script>
-                    var button = document.getElementById("copyButton");
-                    button.style.display = 'none';
-                </script>
+            </div>
+
+            <div id="copyMessageAlert">
+                <div id="messageAlert">
+                    <p id="messageTextAlert"></p>
+                    <button id="copyAlertButton" onclick="closeMeesageCopyAlert()">ACEPTAR</button>
+                </div>
             </div>
         </section>
     </body>

@@ -125,6 +125,7 @@ header {
     border-radius: 1rem;
     justify-content: center;
     position: absolute;
+    overflow: hidden;
     width: 400px;
     height: 600px;
     left: 1000px;
@@ -134,7 +135,7 @@ header {
 
 #resultText #encryptedText {
     position: absolute;
-    width: 336px;
+    width: 300px;
     height: 500px;
     top: 72px;
     font-style: normal;
@@ -142,6 +143,8 @@ header {
     font-size: 20px;
     line-height: 150%;
     color: #495057;
+    white-space: normal;
+    word-break: break-word;
 }
 
 #resultText #copyButton {
@@ -154,8 +157,52 @@ header {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     transition: box-shadow 0.3s ease-in-out;
     font-family: inherit;
+    display: none;
 }
 
 #resultText #copyButton:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#copyMessageAlert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#messageAlert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#messageTextAlert {
+    font-size: 18px;
+    color: #333;
+}
+
+#copyAlertButton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 1rem;
+    border: 1px solid #0A3871;
+    width: 14rem;
+    height: 3rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: inherit;
+}
+
+#copyAlertButton:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
