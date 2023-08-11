@@ -79,3 +79,7 @@ function closeMeesageCopyAlert() {
 
     containerMessage.style.display = 'none';
 }
+
+function tests() {
+    console.log("Mensaje de prueba");
+}
